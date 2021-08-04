@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Tribute Page</title>
+    <link rel="icon" href="resources/batman-logo.png" type="image/x-icon">
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            font-family: BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Ubuntu, Oxygen, Roboto,  Cantarell, 'Open Sans',  sans-serif;
+            box-sizing: border-box;
+        }
+        #main {
+            background-image: linear-gradient(
+                90deg,
+                rgba(153, 101, 58, 0.5),
+                rgb(240,240,240),
+                rgba(153, 101, 58, 0.5)
+                );
+            margin: 1.5em 1em;
+            border-radius: 2vmin;
+            text-align: center;
+        }
+        #title * {
+            padding: 1vmax;
+        }
+        
+        #img-div {
+            background-color: rgba(253, 252, 236, 0.596);
+            margin:1em;
+            padding: 1em;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 1vmin 2vmin 1vmin 2vmin;
+        }
+        #image {
+            margin: .5em;
+            flex: 1 0 10px;
+            max-width:98%;
+            height:auto;
+        }
+        #img-caption {
+            margin: .5em;
+        }
+
+        h3 {
+            margin: 1em;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        #tribute-info {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        dl {
+            max-width: 100%;
+            text-align: left;
+            list-style-type: disc;
+            position: relative;
+            left: 5vmin;
+            line-height: 1.4em;
+        }
+        dt {
+            display: list-item;
+            font-weight: bold;
+            font-size: 17px;
+            margin-top: 1em;
+            margin-bottom: .2em;
+        }
+        
+        footer {
+            margin: 1em;
+            padding: 1em;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a { text-decoration: none;}
+        #logo {
+            display: none;
+            max-width:25px;
+        }
+        a:hover #logo {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <header id='title'>
+            <h1>Christian Bale</h1>
+            <p><i>The Darkest Knight of Hollywood</i></p>
+        </header>
+
+        <figure id="img-div">
+            <img id="image" src="https://static2.srcdn.com/wordpress/wp-content/uploads/2021/05/Christian-Bale-as-Bruce-Wayne-in-Batman-Begins.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5" alt="">
+            <figcaption id="img-caption">Christian Bale as Batman and Bruce Wayne in Batman Begins</figcaption>
+        </figure>
+
+        <div id="tribute-info">
+            <h3>Here are the top 5 reasons why Christian Bale was best suited to portray <i>The Batman</i>:</h3>
+            <dl>
+                <dt>Portrays Bruce Learning From Trauma:</dt>
+                    <dd>The Nolan films incorporate something comic books will never really do;
+                    the idea of growing up and moving on. Bruce undergoes character development
+                    and is able to move on from Gotham and the need to be Batman.
+                    </dd>
+                <dt>Portrays A Skilled Fighter:</dt>
+                    <dd>The action scenes in Bale's Batman films are the best and remarkably well done
+                    as it is clear that he's skilled in different martial arts styles.
+                    </dd>
+                <dt>"No Kill" Rule Acted Well:</dt>
+                    <dd>The rule of not killing anyone is one of Batman's firmest tenets (though it has
+                    been broken before). However, in this series, he maintains it. Bale's excellent
+                    acting allows him to humanize this decision.
+                    </dd>
+                <dt>Humanized Character:</dt>
+                    <dd>Since this series is very realistic in how it told its story, Bruce feels very human.
+                    Bale is personable as Bruce Wayne. As a college student, he isn't able to go through with  
+                    killing Joe Chill. Bruce makes it clear throughout his adventures that he mainly wants to
+                    help Gotham, and save it from itself or other outside forces such as the League of Shadows.
+                    </dd>
+                <dt>Realistic Manner Of Achieving Weapons:</dt>
+                    <dd>One question asked often about Batman is: "Where did he get all that tech without anyone
+                    noticing?" Nolan came up with a clever solution. William Earle, who assigns Lucius Fox
+                    in the R&D department, doesn't care much about what's going on there. So Bruce puts
+                    Lucius Fox for developing Bruce's custom equipments. 
+                    </dd>
+                <dt>Revitalized Comic Book Character: </dt>
+                    <dd>Bale and Nolan brought Batman back to the big screen again for a solid realistic origin
+                    story. This series was the start of superhero movies coming back into vogue, a trend that
+                    continues to current day.
+                    </dd>
+            </dl>
+        </div>
+   
+        <footer>
+            To read more about the epic journey of Christian Bale, check out his <a id="tribute-link" 
+            href="https://en.wikipedia.org/wiki/Christian_Bale" target="_blank" 
+            rel="noopener noreferrer">Wikipedia.<img id="logo" src="resources/wikip.png" alt=""> </a>
+        </footer>
+    </div>
+</body>
+</html>
